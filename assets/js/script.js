@@ -20,4 +20,9 @@ formulario.addEventListener('submit', (e) => {
   let mascota = new Mascota(propietario, direccion, telefono, tipo, nombreMascota, enfermedad)
   resultado.innerHTML = lista(mascota)
 
+  window.scroll({
+    top: document.body.scrollHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
 })
